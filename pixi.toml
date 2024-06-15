@@ -1,0 +1,18 @@
+[project]
+name = "pixi-radian-template"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Jermiah Joseph <jermiahjoseph98@gmail.com>"]
+channels = ["conda-forge", "bioconda"]
+platforms = ["osx-arm64", "osx-64"]
+
+
+
+[dependencies]
+radian = ">=0.6.12,<0.7"
+r-base = ">=4.3.3,<4.4"
+r-essentials = ">=4.3,<5"
+
+[tasks.setup]
+cmd = "Rscript scripts/setup.R"
+description = "Install R packages and setup the environment"
